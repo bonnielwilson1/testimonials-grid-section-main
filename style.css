@@ -28,14 +28,20 @@ body {
 .testimonials {
     max-width: 1440px;
     margin: 100px auto;
-    padding: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-areas: 
+        'dan dan jon kira'
+        'jean pat pat kira'
+        ;
+        gap: 30px;
 
 
 }
 
 .card {
     background-color: white;
-    margin-bottom: 10px;
+    
     padding: 30px;
     box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
     border-radius: 15px;;
@@ -62,15 +68,15 @@ body {
 
 }
 .card-lead{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 .card-quote{
     font-size: 15px;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.6;
     margin-bottom: 20px;
     opacity: 70%;
 }
@@ -80,6 +86,7 @@ body {
     background-image: url(/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position: top 10px right 100px;
+    grid-area: dan;
 }
 .card-bg-purple .card-img, .card-bg-navy .card-img{
     border: 3px solid hsl(263, 55%, 70%);
@@ -88,8 +95,33 @@ body {
 .card-bg-slate {
     background-color: var(--dark-gray);
     color: white;
+    grid-area: jon;
 }
 .card-bg-navy {
     background-color: var(--almost-black);
     color: white;
+    grid-area: pat;
 }
+.card-bg-white {
+    grid-area: jean;
+}
+.card-bg-whitekira {
+    grid-area: kira;
+    padding-right: 50px;
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .testimonials{
+        grid-template-areas:
+        'dan'
+        'jon'
+        'jean'
+        'pat'
+        'kira';
+    
+        
+    }
+}
+
