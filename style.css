@@ -25,3 +25,64 @@ body {
     font-size: 13px; 
     line-height:1.7 ;
 }
+.testimonials {
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+
+
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
+    border-radius: 15px;;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.card-header h3 {
+    font-size: 15px;
+}
+.card-header p {
+    font-size: 15px;
+    opacity :50%;
+}
+.card-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--purple);
+    margin-right: 10px;
+
+}
+.card-lead{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.card-quote{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    opacity: 70%;
+}
+.card-bg-purple {
+    background-color: var(--purple);
+    color: white;
+}
+.card-bg-slate {
+    background-color: var(--dark-gray);
+    color: white;
+}
+.card-bg-navy {
+    background-color: var(--almost-black);
+    color: white;
+}
